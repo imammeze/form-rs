@@ -36,7 +36,7 @@ class HospitalFeedbackController extends Controller
             'photo_path' => $photoPath,
         ]);
 
-        Mail::to('admin@rumahsakit.com')->send(new AdminFeedbackNotification($feedback));
+        Mail::to('muslimahcirahab@gmail.com')->send(new AdminFeedbackNotification($feedback));
 
         return redirect()->route('review.create', ['feedback_id' => $feedback->id]);
     }
