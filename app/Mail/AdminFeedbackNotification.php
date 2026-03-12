@@ -23,7 +23,7 @@ class AdminFeedbackNotification extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Laporan Keluhan & Ulasan Pasien Baru - ' . $this->feedback->unit,
+            subject: 'Laporan Keluhan & Ulasan Pasien Baru - Ruang Nuri RSUD Ajibarang ',
         );
     }
 
