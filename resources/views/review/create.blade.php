@@ -7,7 +7,7 @@
     <div class="mb-8 text-center">
         <img src="{{ asset('images/logo_rsud.png') }}" alt="Logo RSUD Ajibarang" class="h-16 mx-auto mb-4 object-contain">
         <h2 class="text-2xl font-bold text-gray-900">Bagaimana Perasaan Anda?</h2>
-        <p class="text-gray-500 text-sm mt-2">Bantu kami mengetahui tingkat kepuasan Anda terhadap layanan di unit <span class="font-semibold text-blue-600">{{ $feedback->unit }}</span></p>
+        <p class="text-gray-500 text-sm mt-2">Bagaimana pengalaman Anda secara keseluruhan terhadap layanan <span class="font-semibold text-blue-600">Ruang Nuri RSUD Ajibarang</span></p>
     </div>
 
     <form action="{{ route('review.store', $feedback->id) }}" method="POST" class="space-y-8">
