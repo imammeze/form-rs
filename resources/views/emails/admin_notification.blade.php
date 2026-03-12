@@ -121,11 +121,6 @@
                     <span class="data-label">Nama Pasien:</span>
                     <span class="data-value">{{ $feedback->name ?: 'Anonim (Tidak menyertakan nama)' }}</span>
                 </div>
-                
-                <div class="data-row">
-                    <span class="data-label">Unit Layanan:</span>
-                    <span class="data-value">{{ $feedback->unit }}</span>
-                </div>
 
                 <div class="data-row">
                     <span class="data-label">Isi Keluhan/Saran:</span>
