@@ -19,7 +19,6 @@ class HospitalFeedbackController extends Controller
     {
         $validated = $request->validate([
             'name' => 'nullable|string|max:255',
-            'unit' => 'required|string|max:255',
             'content' => 'required|string',
             'photo' => 'nullable|image|max:2048',
         ]);
@@ -31,7 +30,6 @@ class HospitalFeedbackController extends Controller
 
         $feedback = Feedback::create([
             'name' => $validated['name'],
-            'unit' => $validated['unit'],
             'content' => $validated['content'],
             'photo_path' => $photoPath,
         ]);
